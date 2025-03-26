@@ -1,4 +1,26 @@
 /*
 # Test the Server API
 */
-GET http://localhost:8080/api/documents.json
+@host http://localhost:8080
+GET /api/produce.json
+
+HTTP/1.1 200  - OK
+x-powered-by: Express
+access-control-allow-origin: *
+content-type: application/json; charset=utf-8
+content-length: 4099
+etag: W/"1003-/sRN02YeHn6nPU0qO/Vq3+E+yGo"
+date: Wed, 26 Mar 2025 14:46:53 GMT
+connection: close
+###
+@host http://localhost:8080
+GET /api/produce/67e40f237e0b2cde5e6b140d.json
+
+HTTP/1.1 200  - OK
+x-powered-by: Express
+access-control-allow-origin: *
+content-type: application/json; charset=utf-8
+content-length: 205
+etag: W/"cd-0znPOz89rjkJ7fRk72k8efsYFSg"
+date: Wed, 26 Mar 2025 15:24:16 GMT
+connection: close
